@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    }
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: ivory;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+/*HEADER*/
+header{
+    font-size: 0.8rem;
+    background-color: peachpuff;
+    padding-bottom: 2%;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+header a {
+    font-size: 1.5rem;
+}
+.menu-button {
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.desplegable{
+    background-color:rgb(235, 183, 171);
+}
+.menu-color{
+    background-color: rgb(222, 135, 167);
+}
+
+/*BUSCAR GOOGLE FONT para h1*/
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 2.5rem;
+}
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 7rem;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+p {
+    font-size: 1.6rem;
+}
+
+
+/*INDEX*/
+/* Presentacion */
+.presentation {
+    background-image: url(../media/living_3_baja.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+.titulo-presentacion {
+    font-size: 8rem;
+}
+
+/* About*/
+.about {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about img {
+height: 40rem;
+}
+
+.about-text {
+    width: 40rem;
+}
+.about-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/*Call to action*/
+.pedido {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pedido img {
+    height: 30rem;
+}
+
+/*Enlaces*/
+.enlaces {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.enlaces img {
+    height: 20rem;
+}
+.barrio-index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tour-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews-index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Mapa*/
+.mapa{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Footer*/
+footer {
+    background-color:peachpuff;
+    font-size: 1rem;
+}
+footer ul{
+    list-style: none;
+}
+footer a {
+    text-decoration: none;
+}
+footer img {
+    height: 30px;
+}
+.footer-bloque {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list{
+   margin-top: 1rem;
+   margin-left: 1rem;
+}
+.footer-izquierdo{
+   margin-top: 1rem;
+}
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    justify-content: space-between;
+    height: 60%;
+}
+
+.copyright {
+    display: flex;
+    padding-bottom: 30px;
+    font-size: 0.8rem;
+    justify-content: center;
+}
+
+/*CONTACT US HTML*/
+.contact-form {
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+}
+.contact-form textarea {
+    width: 100%;
+}
+
+.submit-button{
+width: 15%;
+}
+
+/*VIRTUAL TOUR HTML*/
+
+.titulo-tour{
+    margin-top: 5%;
+}
+
+.tour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 10rem;
+    justify-content: space-between;
+}
+
+.tour img{
+    height: 40rem;
+    margin-bottom: 2rem;
+}
+
+.tour-carru {
+    margin: 5rem 15rem;
+}
+
+/*HOUSE RULES*/
+.reglas{
+    background-image: url(../media/living_3_baja.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 30px;
+    font-size: 1rem;
+}
+
+.resources {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.resources img {
+    height: 400px;
+}
+
+.resources-lista{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bottom-image-rules {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    height: 400px;
+    background-image: url(../media/1200px-Jardín_Botánico_Buenos_Aires_Invernadero.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/*NEIGHBORHOOD GUIDE*/
+.mapa {
+    display: flex;
+}
+
+.guide-title{
+    text-align: center;
+    padding: 3rem;
+}
+
+.guide {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 5rem;
+}
+.guide img {
+    height: 30rem;
+}
+.guide-text {
+    width: 30rem;
+}
+.guide p {
+    font-size: 1.3rem;
+}
+.guide ul {
+    padding-top: 1rem;
+    font-size: 1rem;
+}
+
+/*TO DO 
+-hover links
+-hover images
+*/
