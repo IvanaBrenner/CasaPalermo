@@ -13,36 +13,58 @@
     <header>
         <!--Menu-->
         <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./virtual-tour.html">Virtual Tour</a>
-                </li> 
-                <li>
-                    <a href="./neighborhood-guide.html">Neighborhood Guide</a>
-                </li>
-                <li>
-                    <a href="./house-rules.html">House Rules & Resources</a>
-                </li>
-                <li>
-                    <a href="./reviews.html">What People Are Saying</a>
-                </li>
-                <li>
-                    <a href="./contact-us.html">Contact US</a>
-                </li>
-            </ul>
-        </nav>
+            <button class="btn btn-link btn-lg menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+    
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas-header menu-color">
+                    <p class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body desplegable">
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./virtual-tour.html">Virtual Tour</a>
+                    </li> 
+                    <li>
+                        <a href="./neighborhood-guide.html">Neighborhood Guide</a>
+                    </li>
+                    <li>
+                        <a href="./house-rules.html">House Rules & Resources</a>
+                    </li>
+                    <li>
+                        <a href="./reviews.html">What People Are Saying</a>
+                    </li>
+                    <li>
+                        <a href="./contact-us.html">Contact US</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            </nav>
         <h1>Casa Palermo</h1>
     </header>
     <main>
         <h2>Say Hello!</h2>
         <div class="contact-form">
-            <p>When reaching out please tell us a bit about yourself and why you’ll be in town. Please include the dates you’re interested in, and any other useful info. Gracias!</p>
-        <textarea name="contact-form" id="contact-form" cols="30" rows="10" placeholder="Hi, I'd love to stay at your place!"></textarea>
-        <button class="submit-button" type="submit">Submit</button>
+            <p>When reaching out please tell us a bit about yourself and why you'll be in town. Please include the dates you’re interested in, and any other useful info. Gracias!</p>
+        <!--<textarea name="contact-form" id="contact-form" cols="30" rows="10" placeholder="Hi, I'd love to stay at your place!"></textarea>-->
+        <!--<button class="submit-button" type="submit">Submit</button>-->
         </div>     
+        <div class="mb-3 form-contacto">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3 form-contacto">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="contact-form submit-button">
+             <button type="button" class="btn btn-light btn-lg contact-form boton-color">Submit</button>
+          </div>
+        </div>
     </main>
     <footer>
         <div class="footer-bloque">
@@ -68,7 +90,7 @@
              <form class="email-form" action="">
                  <label for="email">Stay in touch!</label>
                  <input type="email" name="" id="" placeholder="hola@youremail.com">
-                 <input type="button" value="Subscribe">
+                 <button type="button" class="btn btn-outline-light boton-linea">Subscribe</button>
              </form> 
             </div> 
         </div>

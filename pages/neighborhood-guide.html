@@ -13,27 +13,37 @@
     <header>
         <!--Menu-->
         <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./virtual-tour.html">Virtual Tour</a>
-                </li> 
-                <li>
-                    <a href="./neighborhood-guide.html">Neighborhood Guide</a>
-                </li>
-                <li>
-                    <a href="./house-rules.html">House Rules & Resources</a>
-                </li>
-                <li>
-                    <a href="./reviews.html">What People Are Saying</a>
-                </li>
-                <li>
-                    <a href="./contact-us.html">Contact US</a>
-                </li>
-            </ul>
-        </nav>
+            <button class="btn btn-link btn-lg menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+    
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas-header menu-color">
+                    <p class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body desplegable">
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./virtual-tour.html">Virtual Tour</a>
+                    </li> 
+                    <li>
+                        <a href="./neighborhood-guide.html">Neighborhood Guide</a>
+                    </li>
+                    <li>
+                        <a href="./house-rules.html">House Rules & Resources</a>
+                    </li>
+                    <li>
+                        <a href="./reviews.html">What People Are Saying</a>
+                    </li>
+                    <li>
+                        <a href="./contact-us.html">Contact US</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            </nav>
         <h1>Casa Palermo</h1>
     </header>
     <main>
@@ -48,24 +58,28 @@
             <div class="guide">
                 <div class="guide-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <ul>
-                        <li>Botanical Gardens</li>
-                        <li>El Rosedal</li>
-                        <li>Bosques de Palermo</li>
+                    <ul class="list-group list-group-flush lista-guide">
+                        <li class="list-group-item lista-guide">An item</li>
+                        <li class="list-group-item lista-guide">A second item</li>
+                        <li class="list-group-item lista-guide">A third item</li>
+                        <li class="list-group-item lista-guide">A fourth item</li>
+                        <li class="list-group-item lista-guide">And a fifth one</li>
                     </ul>
                 </div>
-                <img src="../media/1200px-Jardín_Botánico_Buenos_Aires_Invernadero.jpg" alt="Jardin Botanico"> 
+                <img src="../media/1200px-Jardín_Botánico_Buenos_Aires_Invernadero.jpg" class="img-fluid img-thumbnail img-tarjeta" alt="...">
             </div>
             <!--Restaurants-->
             <p class="guide-title">Restaurants</p>
             <div class="guide">
-                <img src="../media/living_3_baja.jpg">
+                <img src="../media/1200px-Jardín_Botánico_Buenos_Aires_Invernadero.jpg" class="img-fluid img-thumbnail" alt="...">
                 <div class="guide-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <ul>
-                         <li>Las Flores</li>
-                         <li>Las Pizarras</li>
-                         <li>Don Julio</li>
+                    <ul class="list-group list-group-flush lista-guide">
+                        <li class="list-group-item lista-guide">An item</li>
+                        <li class="list-group-item lista-guide">A second item</li>
+                        <li class="list-group-item lista-guide">A third item</li>
+                        <li class="list-group-item lista-guide">A fourth item</li>
+                        <li class="list-group-item lista-guide">And a fifth one</li>
                     </ul>
                 </div>
             </div>
@@ -74,26 +88,29 @@
             <div class="guide">
                 <div class="guide-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <ul>
-                         <li>Naranjo</li>
-                        <li></li>
-                        <li></li>
+                    <ul class="list-group list-group-flush lista-guide">
+                        <li class="list-group-item lista-guide">An item</li>
+                        <li class="list-group-item lista-guide">A second item</li>
+                        <li class="list-group-item lista-guide">A third item</li>
+                        <li class="list-group-item lista-guide">A fourth item</li>
+                        <li class="list-group-item lista-guide">And a fifth one</li>
                     </ul>
                 </div>
-                <img src="../media/1200px-Jardín_Botánico_Buenos_Aires_Invernadero.jpg" alt="Jardin Botanico"> 
+                <img src="../media/1200px-Jardín_Botánico_Buenos_Aires_Invernadero.jpg" class="img-fluid img-thumbnail" alt="...">
             </div> 
             <!--Arts and Culture--> 
             <p class="guide-title">Arts and Culture</p> 
             <div class="guide">
-                <img src="../media/1200px-Jardín_Botánico_Buenos_Aires_Invernadero.jpg" alt="Jardin Botanico"> 
-
+                <img src="../media/1200px-Jardín_Botánico_Buenos_Aires_Invernadero.jpg" class="img-fluid img-thumbnail" alt="...">
                 <div class="guide-text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <ul>
-                        <li>Quimera</li>
-                        <li>Malba</li>
-                        <li>Milonga</li>
-                    </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <ul class="list-group list-group-flush lista-guide">
+                    <li class="list-group-item lista-guide">An item</li>
+                    <li class="list-group-item lista-guide">A second item</li>
+                    <li class="list-group-item lista-guide">A third item</li>
+                    <li class="list-group-item lista-guide">A fourth item</li>
+                    <li class="list-group-item lista-guide">And a fifth one</li>
+                </ul>
                 </div>
             </div>
             <!--Beyond Palermo-->
@@ -101,11 +118,15 @@
             <div class="guide">   
                 <div class="guide-text">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <ul>
-                         <li>Tigre</li>
+                    <ul class="list-group list-group-flush lista-guide">
+                        <li class="list-group-item lista-guide">An item</li>
+                        <li class="list-group-item lista-guide">A second item</li>
+                        <li class="list-group-item lista-guide">A third item</li>
+                        <li class="list-group-item lista-guide">A fourth item</li>
+                        <li class="list-group-item lista-guide">And a fifth one</li>
                     </ul>
                 </div>
-                <img src="../media/1200px-Jardín_Botánico_Buenos_Aires_Invernadero.jpg" alt="Jardin Botanico"> 
+                <img src="../media/1200px-Jardín_Botánico_Buenos_Aires_Invernadero.jpg" class="img-fluid img-thumbnail" alt="...">
             </div>     
         </section>
     </main>
@@ -133,7 +154,7 @@
              <form class="email-form" action="">
                  <label for="email">Stay in touch!</label>
                  <input type="email" name="" id="" placeholder="hola@youremail.com">
-                 <input type="button" value="Subscribe">
+                 <button type="button" class="btn btn-outline-light boton-linea">Subscribe</button>
              </form> 
             </div> 
         </div>

@@ -13,66 +13,105 @@
     <header>
         <!--Menu-->
         <nav>
-            <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <a href="./virtual-tour.html">Virtual Tour</a>
-                </li> 
-                <li>
-                    <a href="./neighborhood-guide.html">Neighborhood Guide</a>
-                </li>
-                <li>
-                    <a href="./house-rules.html">House Rules & Resources</a>
-                </li>
-                <li>
-                    <a href="./reviews.html">What People Are Saying</a>
-                </li>
-                <li>
-                    <a href="./contact-us.html">Contact US</a>
-                </li>
-            </ul>
-        </nav>
+            <button class="btn btn-link btn-lg menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+    
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+              <div class="offcanvas-header menu-color">
+                    <p class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body desplegable">
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./virtual-tour.html">Virtual Tour</a>
+                    </li> 
+                    <li>
+                        <a href="./neighborhood-guide.html">Neighborhood Guide</a>
+                    </li>
+                    <li>
+                        <a href="./house-rules.html">House Rules & Resources</a>
+                    </li>
+                    <li>
+                        <a href="./reviews.html">What People Are Saying</a>
+                    </li>
+                    <li>
+                        <a href="./contact-us.html">Contact US</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+            </nav>
         <h1>Casa Palermo</h1>
     </header>
     <main>
+        <!--Reglas-->
         <section>
             <h2>House Rules</h2>
-            <ul class="reglas">
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            </ul>
-        </section>
+            <!--<ul class="reglas">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>-->
+            <img src="../media/living_banner.jpg" class="img-fluid img-banner" alt="...">
+            <div class="box-reglas">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item lista-reglas">An item</li>
+                    <li class="list-group-item lista-reglas">A second item</li>
+                    <li class="list-group-item lista-reglas">A third item</li>
+                    <li class="list-group-item lista-reglas">A fourth item</li>
+                    <li class="list-group-item lista-reglas">And a fifth one</li>
+                </ul>
+            </div>
+         </section>
+        
+        
+        <!--Recursos-->
         <section>
             <h3>Useful Info</h3>
             <div class="resources">
                 <div class="resources-lista">
-                    <div>
-                        <p><strong>Wifi</strong></p>   
-                        <p>Network: xxx</p>
-                        <p>Password:xxx</p>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="card-title recursos-titulo"><strong>Wifi</strong></p>
+                          <p class="card-text recursos-texto">Network: xxx</p>
+                          <p class="card-text recursos-texto">Password: xxx</p>
+                        </div>
                     </div>
-                    <div>
-                        <p><strong>Emergencies</strong></p>
-                        <p>General: 911</p>
-                        <p>Fire: 101</p>
-                        <p>Medical: 107</p>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="card-title recursos-titulo"><strong>Emergencies</strong></p>
+                          <p class="card-text recursos-texto">General: 911</p>
+                          <p class="card-text recursos-texto">Medical: 107</p>
+                          <p class="card-text recursos-texto">Fire: 101</p>
+                        </div>
                     </div>
-                    <div>
-                        <p><strong>Airport Car Service</strong></p>
-                        <p>Manuel Tienda Leon:</p>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="card-title recursos-titulo"><strong>Airport Car Service</strong></p>
+                          <p class="card-text recursos-texto">Manuel Tienda Leon: xxx</p>
+                        </div>
                     </div>
-                    <div>
-                        <p><strong>Visit Tigre with a Local</strong></p>
-                        <p>Whatsapp: +54 9 11 xxx xxxx</p>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="card-title recursos-titulo"><strong>Get around town</strong></p>
+                          <p class="card-text recursos-texto">Get a Sube card at the corner kiosk</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <p class="card-title recursos-titulo"><strong>Visit Tigre with a Local</strong></p>
+                          <p class="card-text recursos-texto">Whatsapp: xxx</p>
+                          <p class="card-text recursos-texto">Rowing Lessons: xxx</p>
+                        </div>
                     </div>
                 </div>
                 <div class="resources-image">
-                    <img src="../media/living_3_baja.jpg" alt="">
+                    <img src="../media/living_3_baja.jpg" class="img-fluid img-thumbnail" alt="...">
                 </div>
             </div>   
         </section>
@@ -103,7 +142,7 @@
              <form class="email-form" action="">
                  <label for="email">Stay in touch!</label>
                  <input type="email" name="" id="" placeholder="hola@youremail.com">
-                 <input type="button" value="Subscribe">
+                 <button type="button" class="btn btn-outline-light boton-linea">Subscribe</button>
              </form> 
             </div> 
         </div>

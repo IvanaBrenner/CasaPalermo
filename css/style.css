@@ -12,16 +12,41 @@ body {
     background-color: ivory;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 62.5%;
+    min-height: 100vh;
+}
+@media only screen and (min-width: 501px) and (max-width: 968px) {
+    body {
+        min-height: 100vh;
+    }
+}
+
+p {
+    text-align: justify;
 }
 ul {
     list-style: none;
     padding-left: 0;
 }
+
+.boton-color {
+    background-color: rgb(218, 158, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.boton-linea{
+   border-color: rgb(218, 158, 255);
+   border-width: 3px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   -webkit-text-fill-color: rgb(218, 158, 255);
+}
+
+.img-tarjeta{
+    background-color: peachpuff;
+}
 /*HEADER*/
 header{
     font-size: 0.8rem;
     background-color: peachpuff;
-    padding-bottom: 2%;
+    padding-bottom: 1.5%;
     position: sticky;
     top: 0px;
     z-index: 10;
@@ -35,8 +60,9 @@ header a {
     font-size: 1.5rem;
 }
 .menu-button {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    padding-bottom: 0;
     color: black;
     text-decoration: none;
     font-size: 1.5rem;
@@ -54,6 +80,7 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 2.5rem;
+    margin: 0;
 }
 h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -63,6 +90,7 @@ h2 {
     padding-bottom: 2%;
 }
 h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 2rem;
     text-align: center;
     padding-top: 4%;
@@ -106,6 +134,7 @@ height: 40rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-top: 5%;
 }
 /*Call to action*/
 .pedido {
@@ -115,19 +144,27 @@ height: 40rem;
     justify-content: center;
 }
 .pedido img {
-    height: 30rem;
+ width: 50%;
 }
-
+.boton-index{
+    position: absolute;
+    right: 200px;
+    width: 300px;
+}
 /*Enlaces*/
 .enlaces {
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-around;
 }
 .enlaces img {
     height: 20rem;
 }
-.barrio-index {
+.enlaces-2{
+    margin-top: 100px;
+}
+/*.barrio-index {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,10 +178,11 @@ height: 40rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+}*/
 /*Mapa*/
 .mapa{
-    margin-top: 100px;
+    padding-top: 7%;
+    padding-bottom: 5%;
     display: flex;
     justify-content: center;
 }
@@ -192,22 +230,66 @@ footer img {
     justify-content: center;
 }
 
-/*CONTACT US HTML*/
-.contact-form {
-    margin-left: 15%;
-    margin-right: 15%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 300px;
-}
-.contact-form textarea {
-    width: 100%;
+@media only screen and (max-width: 500px){
+    
+    .footer-bloque {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .footer-list{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2rem;
+        margin-left: 0;
+    }
+    footer p {
+        margin-top: 5%;
+    }
+    .email-form {
+        display: flex;
+        align-items: center;
+        min-height: 105px;
+    }
 }
 
+/*CONTACT US HTML*/
+.contact-form {
+    margin-right: 15%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-form p {
+    margin-top: 5%;
+}
+.form-contacto{
+    margin-left: 15%;
+    margin-right: 15%;
+}
 .submit-button{
-width: 15%;
+     padding-bottom: 2%;
+}
+@media only screen and (max-width: 500px){
+
+    p {
+        font-size: 1rem;
+    }
+    .contact-form{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .submit-button{
+        padding-bottom: 15%;
+   }
 }
 
 /*VIRTUAL TOUR HTML*/
@@ -230,7 +312,10 @@ width: 15%;
 }
 
 .tour-carru {
-    margin: 5rem 15rem;
+    /*margin: 5rem 15rem;*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
 }
 
 /*HOUSE RULES*/
@@ -240,7 +325,7 @@ width: 15%;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 500px;
+    height: 600px;
     align-items: flex-end;
     justify-content: center;
     padding-right: 30px;
@@ -261,6 +346,14 @@ width: 15%;
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
+    height: 900px;
+}
+.recursos-titulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+}
+.recursos-texto{
+    font-size: 1.3rem;
 }
 
 .bottom-image-rules {
@@ -272,6 +365,20 @@ width: 15%;
     background-position: center;
     background-size: cover;
 }
+.box-reglas{
+    width: 40%;
+    font-size: 1rem;
+    position: absolute;
+    right: 1%;
+    top: 85%;
+}
+.img-banner{
+    width: 100%;
+}
+.lista-reglas{
+    background-color: rgb(237, 220, 204);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
 /*NEIGHBORHOOD GUIDE*/
 .mapa {
@@ -281,6 +388,8 @@ width: 15%;
 .guide-title{
     text-align: center;
     padding: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
 }
 
 .guide {
@@ -302,6 +411,10 @@ width: 15%;
 .guide ul {
     padding-top: 1rem;
     font-size: 1rem;
+}
+.lista-guide{
+    background-color: ivory;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*TO DO 

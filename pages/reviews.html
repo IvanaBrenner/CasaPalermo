@@ -12,15 +12,8 @@
 <body>
     <header>
        <!--Menu-->
-       <nav>
-        <button class="btn btn-outline-light btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
-
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-          <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
+       <!--Nav viejo
+        <nav>
             <ul>
                 <li>
                     <a href="../index.html">Home</a>
@@ -41,11 +34,40 @@
                     <a href="./contact-us.html">Contact US</a>
                 </li>
             </ul>
+        </nav>
+       -->
+       <nav>
+        <button class="btn btn-link btn-lg menu-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+          <div class="offcanvas-header menu-color">
+                <p class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</p>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body desplegable">
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./virtual-tour.html">Virtual Tour</a>
+                </li> 
+                <li>
+                    <a href="./neighborhood-guide.html">Neighborhood Guide</a>
+                </li>
+                <li>
+                    <a href="./house-rules.html">House Rules & Resources</a>
+                </li>
+                <li>
+                    <a href="./reviews.html">What People Are Saying</a>
+                </li>
+                <li>
+                    <a href="./contact-us.html">Contact Us</a>
+                </li>
+            </ul>
           </div>
         </div>
         </nav>
-    
-
     <h1>Casa Palermo</h1>
     </header>
     <main>
@@ -88,7 +110,7 @@
              <form class="email-form" action="">
                  <label for="email">Stay in touch!</label>
                  <input type="email" name="" id="" placeholder="hola@youremail.com">
-                 <input type="button" value="Subscribe">
+                 <button type="button" class="btn btn-outline-light boton-linea">Subscribe</button>
              </form> 
             </div> 
         </div>
