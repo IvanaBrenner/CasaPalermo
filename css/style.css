@@ -206,6 +206,11 @@ height: 40rem;
         margin-bottom: 5px;
     }
 }
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .tarjeta{
+        margin-bottom: 15px;
+    }
+}
 
 /*.barrio-index {
     display: flex;
@@ -365,18 +370,6 @@ footer img {
 }
 
 /*HOUSE RULES*/
-/*.reglas{
-    background-image: url(../media/living_3_baja.jpg);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    height: 600px;
-    align-items: flex-end;
-    justify-content: center;
-    padding-right: 30px;
-    font-size: 1rem;
-}*/
 
 .recursos-titulo{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -421,7 +414,19 @@ footer img {
         margin-left: 0;
     }
 }
-
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .useful-info{
+        margin-top: 120px;
+    }
+    .box-reglas{
+        width: 90%;
+        font-size: 0.7rem;
+        position: absolute;
+        right: 5%;
+        top: 700px;
+    }
+    
+}
 
 .bottom-image-rules {
     display: flex;
