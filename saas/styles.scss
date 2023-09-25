@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: $acento-botones;
+}
+
 body {
     background-color: ivory;
     font-family: $font-main;
@@ -45,6 +49,14 @@ h3 {
     text-align: center;
     padding-top: 4%;
     padding-bottom: 2%;
+}
+
+.hover-scale {
+    transition: 1s;
+}
+
+.hover-scale:hover {
+    scale: 105%;
 }
 
 //Partials

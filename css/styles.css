@@ -27,6 +27,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: rgb(218, 158, 255);
+}
+
 body {
   background-color: ivory;
   font-family: Arial, Helvetica, sans-serif;
@@ -63,6 +67,14 @@ h3 {
   padding-bottom: 2%;
 }
 
+.hover-scale {
+  transition: 1s;
+}
+
+.hover-scale:hover {
+  scale: 105%;
+}
+
 /* HEADER*/
 header {
   font-size: 0.8rem;
@@ -89,6 +101,9 @@ header nav .menu-button {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+header nav .menu-button:hover {
+  color: rgb(218, 158, 255);
+}
 header nav .menu-color {
   background-color: rgb(218, 158, 255);
 }
@@ -100,6 +115,9 @@ header h1 {
   text-align: center;
   font-size: 2.5rem;
   margin: 0;
+}
+header h1:hover {
+  color: black;
 }
 
 /*Header MQ*/
@@ -140,6 +158,9 @@ header h1 {
   flex-direction: row;
   justify-content: center;
   padding-top: 5%;
+}
+.about-card img {
+  height: 100%;
 }
 
 /*Call to action*/
@@ -313,7 +334,7 @@ header h1 {
   justify-content: center;
   margin-top: 40px;
   height: 400px;
-  background-image: url(../media/Botanico1.jpg);
+  background-image: url(../media/planetario.jpg);
   background-position: center;
   background-size: cover;
 }

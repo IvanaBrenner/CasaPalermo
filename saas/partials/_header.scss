@@ -25,6 +25,9 @@ header {
             font-size: 1.5rem;
             font-family: $font-acento;
         }
+        .menu-button:hover {
+            color: $acento-botones;
+        }
         .menu-color{
             background-color: $acento-botones;
         }
@@ -37,6 +40,9 @@ header {
         text-align: center;
         font-size: 2.5rem;
         margin: 0;
+    }
+    h1:hover{
+        color: black;
     }
 }
 //Buscar Google font para h1
