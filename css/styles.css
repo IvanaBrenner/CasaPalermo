@@ -26,7 +26,6 @@ a {
   color: black;
   text-decoration: none;
 }
-
 a:hover {
   color: rgb(218, 158, 255);
 }
@@ -51,26 +50,21 @@ ul {
   padding-left: 0;
 }
 
-h2 {
+h2, h3 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
-  font-size: 7rem;
   padding-top: 4%;
   padding-bottom: 2%;
+  font-size: 7rem;
 }
 
 h3 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2rem;
-  text-align: center;
-  padding-top: 4%;
-  padding-bottom: 2%;
 }
 
 .hover-scale {
   transition: 1s;
 }
-
 .hover-scale:hover {
   scale: 105%;
 }
@@ -105,7 +99,7 @@ header nav .menu-button:hover {
   color: rgb(218, 158, 255);
 }
 header nav .menu-button:active {
-  color: rgb(218, 158, 255);
+  color: rgb(218, 158, 255) !important;
 }
 header nav .menu-color {
   background-color: rgb(218, 158, 255);
@@ -448,7 +442,7 @@ header h1:hover {
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
-  h2 {
+  h2, h3 {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     text-align: center;
     font-size: 3.5rem;
