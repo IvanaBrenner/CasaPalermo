@@ -28,6 +28,9 @@ header {
         .menu-button:hover {
             color: $acento-botones;
         }
+        .menu-button:active {
+            color: $acento-botones;
+        }
         .menu-color{
             background-color: $acento-botones;
         }
@@ -45,7 +48,7 @@ header {
         color: black;
     }
 }
-//Buscar Google font para h1
+
 
 /*Header MQ*/
 
