@@ -1,0 +1,30 @@
+/* VARIABLES*/
+$acento-botones: rgb(218, 158, 255); 
+$acento-color: rgb(239, 214, 192);
+$font-main: Arial, Helvetica, sans-serif;
+$font-acento: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+/*Clases Comunes*/
+
+.boton-color {
+    background-color: $acento-botones;
+    font-family: $font-acento;
+}
+.boton-linea{
+   border-color: $acento-botones;
+   border-width: 3px;
+   font-family: $font-acento;
+   -webkit-text-fill-color: $acento-botones;
+}
+
+.img-tarjeta{
+    background-color: $acento-color;
+}
+
+// Mixins
+@mixin flex ($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}

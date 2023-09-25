@@ -1,0 +1,32 @@
+/*CONTACT US HTML*/
+.contact-form {
+    margin-right: 15%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+        margin-top: 5%;
+    }
+}
+.form-contacto{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.submit-button{
+     padding-bottom: 2%;
+}
+/*Contact-Us MQ*/
+@media only screen and (max-width: 500px){
+
+    p {
+        font-size: 1rem;
+    }
+    .contact-form{
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+    .submit-button{
+        padding-bottom: 15%;
+   }
+}

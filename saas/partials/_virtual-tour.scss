@@ -1,0 +1,47 @@
+.titulo-tour{
+    margin-top: 5%;
+}
+
+.tour {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6rem 10rem;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+.tour-carru {
+    /*margin: 5rem 15rem;*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Virtual Tour MQ*/
+@media only screen and (max-width: 500px){
+    .tour-carru {
+        width: 90%;
+    }
+    .tour {
+        margin: 2rem 2rem;
+    }
+    p {
+            font-size: 1rem;
+        }
+    .titulo-tour{
+            margin-bottom: 7%;
+        }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    .tour-carru {
+        width: 80%;
+    }
+    .tour {
+        margin: 5rem 5rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}

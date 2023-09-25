@@ -1,0 +1,60 @@
+@import "partials/variables";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+    }
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: ivory;
+    font-family: $font-main;
+    font-size: 62.5%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+p {
+    text-align: justify;
+    font-size: 1.6rem;
+}
+
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+h2 {
+    font-family: $font-acento;
+    text-align: center;
+    font-size: 7rem;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+h3 {
+    font-family: $font-acento;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 2%;
+}
+
+//Partials
+@import "partials/header";
+@import "partials/index";
+@import "partials/virtual-tour";
+@import "partials/contact-us";
+@import "partials/house-rules";
+@import "partials/neighborhood-guide";
+@import "partials/footer";
+
+
+
