@@ -1,6 +1,7 @@
 /* VARIABLES*/
 $acento-botones: rgb(218, 158, 255); 
-$acento-color: rgb(239, 214, 192);
+$acento-color: rgb(247, 234, 227);
+$fondo-color: rgb(252, 245, 242);
 $font-main: Arial, Helvetica, sans-serif;
 $font-acento: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
@@ -18,7 +19,7 @@ $font-acento: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .img-tarjeta{
-    background-color: $acento-color;
+    background-color: $fondo-color;
 }
 
 .hover-scale {
