@@ -156,11 +156,10 @@ header h1:hover {
   flex-direction: row;
   justify-content: center;
   padding-top: 5%;
-}
-.about-card img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  /* img {
+      height: 100%;
+      object-fit: cover;
+  }  */
 }
 
 /*Call to action*/
