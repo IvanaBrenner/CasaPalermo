@@ -42,6 +42,9 @@ h2 {
 }
 
 h3 {
-    @extend h2;
+    font-family: $font-acento;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 2%;
     font-size: 2rem;
 }

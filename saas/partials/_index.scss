@@ -46,10 +46,11 @@
 
 /*Call to action*/
 .pedido {
-    margin-top: 100px;
+    /* margin-top: 100px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+    @include flex (row, center, center);
     img {
         width: 50%;
     }

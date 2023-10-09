@@ -3,12 +3,14 @@
 }
 
 .tour {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    align-items: center; */
+    @include flex (column, space-between, center);
     margin: 6rem 10rem;
     margin-top: 1rem;
-    justify-content: space-between;
+    
 }
 
 .tour-carru {

@@ -58,7 +58,7 @@ ul {
   padding-left: 0;
 }
 
-h2, h3 {
+h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   text-align: center;
   padding-top: 4%;
@@ -67,6 +67,10 @@ h2, h3 {
 }
 
 h3 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 2%;
   font-size: 2rem;
 }
 
@@ -106,7 +110,7 @@ header nav .menu-color {
   background-color: rgb(218, 158, 255);
 }
 header nav .desplegable {
-  background-color: rgb(235, 183, 171);
+  background-color: rgb(233, 210, 247);
 }
 header h1 {
   font-family: "Times New Roman", Times, serif;
@@ -171,10 +175,14 @@ header h1:hover {
 }
 /*Call to action*/
 .pedido {
-  margin-top: 100px;
+  /* margin-top: 100px;
   display: flex;
   align-items: center;
+  justify-content: center; */
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .pedido img {
   width: 50%;
@@ -227,12 +235,16 @@ header h1:hover {
 }
 
 .tour {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin: 6rem 10rem;
   margin-top: 1rem;
-  justify-content: space-between;
 }
 
 .tour-carru {
@@ -450,9 +462,7 @@ header h1:hover {
     margin-right: 1rem;
     margin-bottom: 1rem;
   }
-  h2, h3 {
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    text-align: center;
+  h2 {
     font-size: 3.5rem;
     padding-top: 7%;
     padding-bottom: 1%;
@@ -511,9 +521,9 @@ footer .footer-izquierdo {
 footer .email-form {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-top: 1rem;
   margin-right: 1rem;
-  justify-content: space-between;
   height: 60%;
 }
 footer .copyright {
