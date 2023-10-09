@@ -110,7 +110,7 @@ header nav .menu-color {
   background-color: rgb(218, 158, 255);
 }
 header nav .desplegable {
-  background-color: rgb(233, 210, 247);
+  background-color: rgb(246, 234, 253);
 }
 header h1 {
   font-family: "Times New Roman", Times, serif;
@@ -426,7 +426,7 @@ header h1:hover {
 }
 
 .lista-guide {
-  background-color: ivory;
+  background-color: rgb(252, 245, 242);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
