@@ -38,6 +38,11 @@
 
 /*Neighborhood Guide MQ*/
 @media only screen and (max-width: 500px){
+    .mapa {
+        display: flex;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
     .guide {
         display: flex;
         flex-direction: column-reverse;
@@ -69,13 +74,18 @@
         margin-bottom: 1rem;
     }
     
-    h2 {
+    .titulo-guia {
         font-size: 3.5rem;
         padding-top: 7%;
         padding-bottom: 1%;
     }
 }
 @media only screen and (min-width: 501px) and (max-width: 960px) {
+    .titulo-guia {
+        font-size: 5rem;
+        padding-top: 7%;
+        padding-bottom: 1%;
+    }
     .guide {
         display: flex;
         flex-direction: column-reverse;
